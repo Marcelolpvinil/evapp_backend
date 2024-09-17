@@ -11,7 +11,8 @@ router.post("/paciente", controllerPaciente.Cadastrar);
 router.get("/horario", controllerHorario.Listar);
 router.post("/consulta/confirmar", controllerConsulta.ListarConsulta);
 router.get("/consulta/:id_paciente", controllerConsulta.Confirmar);
-router.delete("consulta/:id_paciente", controllerConsulta.Deletar);
+router.delete("/consulta/:id_paciente", controllerConsulta.Deletar);
+
 router.get("/admin", controllerAdmin.Listar)
 
 //router.get("/horario", jwt.ValidateJWT, controllerHorario.Listar);
