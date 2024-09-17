@@ -3,7 +3,7 @@ import {execute} from "../database/sqlite.js";
 
 
 async function Login(email, senha){
-    let sql = "select * from paciente where email = ? and senha = ?)";
+    let sql = "select * from paciente where email = ? and senha = ?";
     const paciente = await execute(sql, [email, senha]);
     return paciente;
 }
